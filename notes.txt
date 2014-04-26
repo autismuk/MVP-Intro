@@ -2,7 +2,7 @@
 
 3: Reverse the bats direction. View sending 'messages' to the presenter, which acts on them. Oops, it needs to be bigger. Oops oops, I forgot the status bar. Tiling the background (exercise)
 
-4: Extending the game to add a ball and score (exercise) to the view and model.
+4: Extending the game to add a ball and score (exercise) to the view and model. Answer to ex part 3. (view)
 
 5: Moving the ball. Handling collisions with the bat - should it be view or presenter ? (Exercise : make it play upside down)
 
