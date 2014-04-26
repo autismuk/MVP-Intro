@@ -1,0 +1,13 @@
+
+
+2: Move the bat - 2 methods, moveBat() and reverseBat() adding code to the presenter via eventFrame. What does the presenter do. Division between presenter and model.
+
+3: Reverse the bats direction. View sending 'messages' to the presenter, which acts on them.
+
+4: Extending the game to add a ball and score to the view and model.
+
+5: Moving the ball. Handling collisions with the bat - should it be view or presenter ?
+
+6: Replacing the ball with an actual ball graphic. Changing the view
+
+7: Adding an action button to replace toouching the bat. 
