@@ -23,5 +23,6 @@ Runtime:addEventListener( "enterFrame", 											-- added code to update the p
 
 		Part 2:		Added code to run the presenter. Moved view.update() to the presenter.
 		Part 3: 	Added 'presenter' as a parameter to view initialise, so the view can send the presenter messages. Added code to hide status bar.
-
+		Part 4: 	Unchanged
+		
 --]]

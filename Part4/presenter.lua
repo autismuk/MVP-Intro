@@ -33,5 +33,6 @@ return presenter
 
 		Part 2:		Added the presenter
 		Part 3:		Added the 'tapMessage' handler, and keep a reference to the model.
+		Part 4:		Unchanged
 
 --]]

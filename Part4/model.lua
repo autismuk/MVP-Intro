@@ -14,6 +14,10 @@ function model.initialise()
 	model.bat.dx = 0 																	-- create model.bat.dx, model.bat.speed (part 2)
 	model.bat.speed = 5  																-- (these could be set in the table initialiser)
 	model.setBatDirection(1) 															-- set bat direction (part 2)
+
+	model.ball = { x = 100,y = 100, dx = 1,dy = 1,speed = 10, radius = 10 }				-- initialise the ball (part 4)
+	model.score = 0 																	-- initialise the score (part 4, exercise)
+
 end
 
 
@@ -44,5 +48,7 @@ return model
 	Changes:
 
 		Part 2:		Added model.bat.dx, model.bat.speed, moveBat(),  setBatDirection() methods.
+		Part 3: 	Unchanged
+		Part 4:		Added the ball and score data to the model.
 
 --]]
