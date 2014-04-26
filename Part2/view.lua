@@ -23,3 +23,11 @@ function view.update(model)
 	view.batObject.width = model.bat.width
 end
 return view
+
+--[[
+
+	Changes:
+
+		Part 2:		No changes made to the view.
+
+--]]

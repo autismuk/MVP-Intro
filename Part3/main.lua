@@ -4,12 +4,14 @@
 --
 -----------------------------------------------------------------------------------------
 
+display.setStatusBar( display.HiddenStatusBar ) 							-- oops I forgot this (part 3)
+
 local model = require("model") 														-- pull in the model and the view.
 local view = require("view")
 local presenter = require("presenter")
 
 model.initialise() 																	-- initialise the model,view and presenter.
-view.initialise()
+view.initialise(presenter) 															-- the view needs to know about the presenter (Part 3)
 presenter.initialise() 																
 
 Runtime:addEventListener( "enterFrame", 											-- added code to update the presenter.
@@ -20,5 +22,6 @@ Runtime:addEventListener( "enterFrame", 											-- added code to update the p
 	Changes:
 
 		Part 2:		Added code to run the presenter. Moved view.update() to the presenter.
+		Part 3: 	Added 'presenter' as a parameter to view initialise, so the view can send the presenter messages. Added code to hide status bar.
 
 --]]
