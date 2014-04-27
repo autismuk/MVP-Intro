@@ -23,10 +23,7 @@ function view.initialise(presenter)
 	view.presenter = presenter 															-- store the presenter reference (part 3)
 	view.batObject:addEventListener( "tap",view ) 										-- add event listener for bat object (part 3)
 
-	view.ballObject = display.newCircle(1,1,12)											-- create a ball object (part 4)
-	view.ballObject:setFillColor( 0,1,1 ) 												-- make it cyan
-	view.ballObject.strokeWidth = 2
-	view.ballObject:setStrokeColor( 0,0,0 )
+	view.ballObject = display.newImage("ball.png")										-- create a ball object (part 6, changed from part 4)
 
 	view.scoreObject = display.newText("<score>",315,5,native.systemFontBold,32) 		-- create a score object (part 4, exercise)
 	view.scoreObject.anchorX,view.scoreObject.anchorY = 1,0
@@ -43,13 +40,15 @@ end
 ---		Update the view
 ---
 function view.update(model)
+
 	view.batObject.x = model.bat.x 														-- update the view from the model.
 	view.batObject.y = model.bat.y
 	view.batObject.width = model.bat.width
 
 	view.ballObject.x = model.ball.x 													-- update the ball (part 4)
 	view.ballObject.y = model.ball.y
-	view.ballObject.radius = model.ball.radius
+	view.ballObject.width = model.ball.radius * 4 										-- change ball size (part 6)
+	view.ballObject.height = model.ball.radius * 4
 
 	view.scoreObject.text = ("00000" .. model.score):sub(-5,-1) 						-- update the score (part 4, exercise)
 end

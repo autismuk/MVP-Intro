@@ -4,8 +4,9 @@
 --
 -----------------------------------------------------------------------------------------
 
-display.setStatusBar( display.HiddenStatusBar ) 							-- oops I forgot this (part 3)
+display.setStatusBar( display.HiddenStatusBar ) 									-- oops I forgot this (part 3)
 
+local stor = require("storyboard")
 local model = require("model") 														-- pull in the model and the view.
 local view = require("view")
 local presenter = require("presenter")

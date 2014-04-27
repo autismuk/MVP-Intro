@@ -65,5 +65,7 @@ return presenter
 		Part 3:		Added the 'tapMessage' handler, and keep a reference to the model.
 		Part 4:		Unchanged
 		Part 5: 	Added code to move the ball, bounce of the walls, and increment the score.
+		Part 6:		Unchanged
+		
 
 --]]
