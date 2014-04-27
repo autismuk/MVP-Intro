@@ -47,8 +47,8 @@ function view.update(model)
 
 	view.ballObject.x = model.ball.x 													-- update the ball (part 4)
 	view.ballObject.y = model.ball.y
-	view.ballObject.width = model.ball.radius * 4 										-- change ball size (part 6)
-	view.ballObject.height = model.ball.radius * 4
+	view.ballObject.width = model.ball.radius * 2 										-- change ball size (part 6)
+	view.ballObject.height = model.ball.radius * 2
 
 	view.scoreObject.text = ("00000" .. model.score):sub(-5,-1) 						-- update the score (part 4, exercise)
 end
