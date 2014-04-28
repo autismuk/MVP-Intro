@@ -66,6 +66,7 @@ return presenter
 		Part 4:		Unchanged
 		Part 5: 	Added code to move the ball, bounce of the walls, and increment the score.
 		Part 6:		Unchanged
+		Part 7:		Unchanged
 		
 
 --]]

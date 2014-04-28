@@ -27,6 +27,13 @@ function view.initialise(presenter)
 
 	view.scoreObject = display.newText("<score>",315,5,native.systemFontBold,32) 		-- create a score object (part 4, exercise)
 	view.scoreObject.anchorX,view.scoreObject.anchorY = 1,0
+
+	view.actionButton = display.newImage("button.png") 									-- create an action button (part 7)
+	view.actionButton.anchorX, view.actionButton.anchorY = 0.5,1 							-- position it, size it, make it slightly see through.
+	view.actionButton.x,view.actionButton.y = 160,475
+	view.actionButton.xScale,view.actionButton.yScale = 0.3,0.25
+	view.actionButton.alpha = 0.8
+	view.actionButton:addEventListener( "tap",view )  									-- it sends the message as well.
 end
 
 ---
@@ -52,6 +59,7 @@ function view.update(model)
 
 	view.scoreObject.text = ("00000" .. model.score):sub(-5,-1) 						-- update the score (part 4, exercise)
 end
+
 return view
 
 --[[
@@ -62,6 +70,7 @@ return view
 		Part 3: 	Store the presenter reference, and send the message to the presenter on tap. Added the background code (exercise for reader)
 		Part 4:		Create ball/score objects and update them.
 		Part 5: 	Unchanged
-
+		Part 6: 	Changed ball shape to ball graphic
+		Part 7:		Added button to 'action' reversal.
 
 --]]

@@ -26,5 +26,6 @@ Runtime:addEventListener( "enterFrame", 											-- added code to update the p
 		Part 4: 	Unchanged
 		Part 5: 	Unchanged
 		Part 6:		Unchanged
+		Part 7:		Unchanged
 		
 --]]
