@@ -1,4 +1,0 @@
-
-6: Replacing the ball with an actual ball graphic. Changing the view (exercise : replacing the bat) - previous upside down exercise.
-
-7: Adding an action button to replace toouching the bat. Binding. Lists of objects (exercise : 3D view)
